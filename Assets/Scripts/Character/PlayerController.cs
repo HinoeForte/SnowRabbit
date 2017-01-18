@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour {
 	float jumpPower = 300.0f;
 	LimitLine limitLine;
 	float sideBase = 6.15f;
-	float temp = 3f;
 
 	void Awake () {
 		
