@@ -21,12 +21,12 @@ public class GameManager : MonoBehaviour {
 		scene.AddComponent(Type.GetType(stage));
 
 		// プレイヤーの生成
-		var player = (GameObject)Resources.Load ("Prefabs/Stage/Player");
+		var player = (GameObject)Resources.Load ("Prefabs/Game/Player");
 		var obj = Instantiate (player, new Vector3(0f,0f,0f), Quaternion.identity);
 		obj.name = player.name;
 
 		// カメラの生成
-		var camera = (GameObject)Resources.Load ("Prefabs/Stage/Camera");
+		var camera = (GameObject)Resources.Load ("Prefabs/Game/Camera");
 		obj = Instantiate (camera, new Vector3(0f,0f,0f), Quaternion.identity);
 		obj.name = camera.name;
 	}
